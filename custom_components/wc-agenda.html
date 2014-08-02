@@ -1,0 +1,214 @@
+<link rel="stylesheet" href="agenda.css">
+
+<polymer-element name="my-agenda" noscript>
+  <template>
+<div class="bucket -secondary g-bg-green-grey -auto -mobile-height-auto">
+          <div class="agenda js-tabs" data-tab-namespace="agenda">
+            <div class="agenda__header">
+              <h3 class="agenda__title bucket__headline h3">Agenda</h3>
+              <p class="agenda__check-in g-color-lightblue-grey">On-site check-in starts on June 24 from 2:00 - 8:00 pm PDT. For the full schedule, visit the <a href="/events/io/help" class="g-color-blue">Help page</a>.</p>
+              <div class="tabs__items">
+                <div class="tabs__tab js-activate-tab" data-tab-target="day-1">Day 1</div>
+                <div class="tabs__tab-divider">|</div>
+                <div class="tabs__tab js-activate-tab" data-tab-target="day-2">Day 2</div>
+              </div>
+
+            </div>
+
+            <div class="agenda__content tabs__content js-tab-content-container">
+              <div class="tabs__detail js-tabs-content" data-tab-name="day-1">
+                <div class="agenda__labels">
+                  <div class="agenda__label -desktop">Breakfast</div>
+                  <div class="agenda__label -desktop">Keynote</div>
+                  <div class="agenda__label -desktop">Lunch</div>
+                  <div class="agenda__label -desktop">Sessions</div>
+                  <div class="agenda__label -desktop">Code Labs</div>
+                  <div class="agenda__label -desktop">Sandbox</div>
+                  <div class="agenda__label -desktop">After Hours</div>
+                </div>
+                <div class="agenda__table">
+                  <table>
+                    <tfoot>
+                      <tr>
+                        <td class="agenda__time"><span class="agenda__hour">7</span></td>
+                        <td class="agenda__time -alt"><span class="agenda__hour -alt">8</span></td>
+                        <td class="agenda__time"><span class="agenda__hour">9</span></td>
+                        <td class="agenda__time -alt"><span class="agenda__hour -double-digit -alt">10</span></td>
+                        <td class="agenda__time"><span class="agenda__hour -double-digit with-unit"><span class="agenda__hour">11</span></td>
+                        <td class="agenda__time -alt"><span class="agenda__hour -double-digit -alt">12<span class="hide-for-small-only">P</span></span></td>
+                        <td class="agenda__time"><span class="agenda__hour with-unit">1<span class="show-for-small-only">pm</span></span></td>
+                        <td class="agenda__time -alt"><span class="agenda__hour -alt">2</span></td>
+                        <td class="agenda__time"><span class="agenda__hour">3</span></td>
+                        <td class="agenda__time -alt"><span class="agenda__hour -alt">4</span></td>
+                        <td class="agenda__time"><span class="agenda__hour">5</span></td>
+                        <td class="agenda__time -alt"><span class="agenda__hour -alt">6</span></td>
+                        <td class="agenda__time"><span class="agenda__hour">7</span></td>
+                        <td class="agenda__time -alt"><span class="agenda__hour -alt">8</span></td>
+                        <td class="agenda__time"><span class="agenda__hour">9</span></td>
+                        <td class="agenda__time -alt"><span class="agenda__hour -double-digit -alt">10</span></td>
+                        <td class="agenda__time"><span class="agenda__hour -double-digit with-unit">11</span></td>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td class="agenda__row" colspan="2">
+                          <div class="agenda__span">
+                            <div class="agenda__label -mobile show-for-small-only">Breakfast</div>
+                          </div>
+                        </td>
+                        <td colspan="13"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"></td>
+                        <td class="agenda__row" colspan="2">
+                          <div class="agenda__span">
+                            <div class="agenda__label -mobile show-for-small-only">Keynote</div>
+                          </div>
+                        </td>
+                        <td colspan="13"></td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="4"></td>
+                        <td class="agenda__row" colspan="2">
+                          <div class="agenda__span">
+                            <div class="agenda__label -mobile show-for-small-only">Lunch</div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="6"></td>
+                        <td class="agenda__row" colspan="4">
+                          <div class="agenda__span">
+                            <div class="agenda__label -mobile show-for-small-only">Sessions</div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="4"></td>
+                        <td class="agenda__row" colspan="6">
+                          <div class="agenda__span">
+                            <div class="agenda__label -mobile show-for-small-only">Code Labs</div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="4"></td>
+                        <td class="agenda__row" colspan="6">
+                          <div class="agenda__span">
+                            <div class="agenda__label -mobile show-for-small-only">Sandbox</div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="11"></td>
+                        <td class="agenda__row -half" colspan="4">
+                          <div class="agenda__span">
+                            <div class="agenda__label -mobile show-for-small-only">After Hours</div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="tabs__detail js-tabs-content" data-tab-name="day-2">
+                <div class="agenda__labels">
+                  <div class="agenda__label -desktop">Breakfast</div>
+                  <div class="agenda__label -desktop">Sessions</div>
+                  <div class="agenda__label -desktop">Lunch</div>
+                  <div class="agenda__label -desktop">Code Labs</div>
+                  <div class="agenda__label -desktop">Sandbox</div>
+                  <div class="agenda__label -desktop"></div>
+                  <div class="agenda__label -desktop"></div>
+                </div>
+                <div class="agenda__table">
+                  <table>
+                    <tfoot>
+                      <tr>
+                        <td class="agenda__time"><span class="agenda__hour">7</span></td>
+                        <td class="agenda__time -alt"><span class="agenda__hour -alt">8</span></td>
+                        <td class="agenda__time"><span class="agenda__hour">9</span></td>
+                        <td class="agenda__time -alt"><span class="agenda__hour -double-digit -alt">10</span></td>
+                        <td class="agenda__time"><span class="agenda__hour -double-digit with-unit"><span class="agenda__hour">11</span></td>
+                        <td class="agenda__time -alt"><span class="agenda__hour -double-digit -alt">12<span class="hide-for-small-only">P</span></span></td>
+                        <td class="agenda__time"><span class="agenda__hour with-unit">1<span class="show-for-small-only">pm</span></span></td>
+                        <td class="agenda__time -alt"><span class="agenda__hour -alt">2</span></td>
+                        <td class="agenda__time"><span class="agenda__hour">3</span></td>
+                        <td class="agenda__time -alt"><span class="agenda__hour -alt">4</span></td>
+                        <td class="agenda__time"><span class="agenda__hour">5</span></td>
+                        <td class="agenda__time -alt"><span class="agenda__hour -alt">6</span></td>
+                        <td class="agenda__time"><span class="agenda__hour">7</span></td>
+                        <td class="agenda__time -alt"><span class="agenda__hour -alt">8</span></td>
+                        <td class="agenda__time"><span class="agenda__hour">9</span></td>
+                        <td class="agenda__time -alt"><span class="agenda__hour -double-digit -alt">10</span></td>
+                        <td class="agenda__time"><span class="agenda__hour -double-digit with-unit">11</span></td>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td class="agenda__row" colspan="2">
+                          <div class="agenda__span">
+                            <div class="agenda__label -mobile show-for-small-only">Breakfast</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"></td>
+                        <td class="agenda__row" colspan="3">
+                          <div class="agenda__span">
+                            <div class="agenda__label -mobile show-for-small-only">Sessions</div>
+                          </div>
+                        </td>
+                        <td colspan="2"></td>
+                        <td class="agenda__row" colspan="3">
+                          <div class="agenda__span">
+                            <div class="agenda__label -mobile show-for-small-only">Sessions</div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="4"></td>
+                        <td class="agenda__row" colspan="2">
+                          <div class="agenda__span">
+                            <div class="agenda__label -mobile show-for-small-only">Lunch</div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="2"></td>
+                        <td class="agenda__row" colspan="8">
+                          <div class="agenda__span">
+                            <div class="agenda__label -mobile show-for-small-only">Code Labs</div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="2"></td>
+                        <td class="agenda__row" colspan="8">
+                          <div class="agenda__span">
+                            <div class="agenda__label -mobile show-for-small-only">Sandbox</div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr></tr>
+                      <tr></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </template>
+</polymer-element>
+    

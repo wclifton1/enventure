@@ -1,0 +1,227 @@
+#drawerPanel, [drawer] {
+  background-color: #eee;
+}
+
+[drawer] {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+[main] {
+  height: 100%;
+}
+
+core-toolbar {
+  background-color: #e1f5fe;
+  color: rgba(0,0,0,.57);
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+core-toolbar.medium-tall {
+  height: 144px;
+}
+
+core-toolbar::shadow #bottomBar {
+  height: 80px;
+}
+
+.main-label {
+  padding: 0 0 20px 60px;
+}
+
+/* adjust drawerPanel drawer's width instead of using the default */
+#drawerPanel::shadow #drawer {
+  width: 320px;
+}
+
+#drawerPanel::shadow #main {
+  left: 320px;
+}
+
+/* menu */
+core-menu#menu {
+  padding: 8px 0;
+  margin: 0;
+}
+
+/* menu item */
+polyfill-next-selector { content: 'core-menu#menu core-item'; }
+::content core-item, ::content core-submenu::shadow core-item {
+  height: 56px;
+  padding-left: 60px;
+  font-size: 15px;
+  color: #444;
+  font-weight: normal !important;
+}
+
+polyfill-next-selector { content: 'core-menu#menu core-item.core-selected'; }
+::content core-item.core-selected {
+  background-color: #dedede;
+}
+
+/* card */
+#card {
+  display: block;
+  margin: 64px 120px 60px 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+#card[hidden] {
+  display: none;
+}
+
+#card.move-up {
+  transition: -webkit-transform 0.38s cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: transform 0.38s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+polyfill-next-selector { content: '.sourceButton';}
+::content .sourceButton {
+  position: absolute;
+  z-index: 1;
+}
+
+polyfill-next-selector { content: '.sourceButton:not(.fallback)';}
+::content .sourceButton:not(.fallback) {
+  background-color: #fcfcfc;
+  color: #666464;
+  bottom: -28px;
+  right: 24px;
+}
+
+polyfill-next-selector { content: '.sourceButton.fallback';}
+::content .sourceButton.fallback {
+  right: 24px;
+  top: 13px;
+}
+
+
+polyfill-next-selector { content: '#drawerPanel[narrow] .sourceButton:not(.fallback)';}
+#drawerPanel[narrow] ::content .sourceButton:not(.fallback) {
+  right: 8px;
+}
+
+polyfill-next-selector { content: '#drawerPanel:not([narrow]) .menuButton';}
+#drawerPanel:not([narrow]) ::content .menuButton {
+  display: none;
+}
+
+.element-label {
+  height: 80px;
+  line-height: 80px;
+  padding-left: 24px;
+  background-color: #fff;
+  letter-spacing: 0.05em;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(0,0,0,.57);
+}
+
+#frame {
+  display: block;
+  width: 100%;
+  min-height: 500px;
+  border: none;
+}
+
+/* narrow layout */
+#drawerPanel[narrow] [main] {
+  background-color: #fff;
+}
+
+#drawerPanel[narrow] #card {
+  margin: 0;
+  box-shadow: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#drawerPanel[narrow] #frame {
+  min-height: 100%;
+}
+
+#drawerPanel[narrow] #frameContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+}
+}
+}@media only screen and (min-width: 851px) and (max-width: 990px) {
+    footer .links {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: flex-start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    justify-content: flex-start;
+}
+footer .links .paper-button {
+    margin-bottom: 16px;
+}
+footer #copyright {
+    margin-top: -16px;
+}
+}@media only screen and (min-width: 990px) {
+    #future img {
+    width: 416px;
+    height: 286px;
+}
+}
+
+.main-label{
+	font-size: 1.5em;
+}
+
+en {
+	color: rgba(0,0,0,.87);
+	font-weight: 300;
+}
+venture{
+	font-family: Georgia, Times, "Times New Roman", serif;
+	color: #0091ea;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+
+.content-padding, footer>:first-child {
+    max-width: 1032px;
+    margin: 0 auto;
+}
+
+footer {
+    position: relative;
+    background-color: #fafafa;
+    padding: 50px 0;
+    padding-left: 64px;
+}
+footer .links {
+    margin-bottom: 56px;
+}
+footer paper-button {
+    margin-right: 30px;
+    opacity: 0.6;
+    color: black;
+}
+footer #copyright {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+footer #copyright a {
+    color: #666666;
+}
+
